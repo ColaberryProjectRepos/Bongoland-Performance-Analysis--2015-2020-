@@ -1,0 +1,61 @@
+
+Create and Formatting Date Table  BikeSourceCycles Sales''[Date].
+9
+<p><span style="color: rgb(68, 68, 68); font-family: Georgia, Georgia, serif; font-size: 18px; letter-spacing: normal;">Let us create Date Table so we can have not only a well-organized date table but also a well-formatted date table</span></p><p class="MsoNormal" style="margin-bottom: 7.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;color:#767676">Calendar Dax</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">Calender =
+ADDCOLUMNS (<span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">CALENDAR
+(Min('BikeSourceCycles Sales'[Date]), MAX('<span style="letter-spacing: 0.3px;">BikeSourceCycles Sales</span><span style="letter-spacing: 0.3px;">'[Date])),</span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"DateAsInteger",
+FORMAT ( [Date], "YYYYMMDD" ),<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"Year",
+YEAR ( [Date] ),<span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"Monthnumber",
+FORMAT ( [Date], "MM" ),<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"YearMonthnumber",
+FORMAT ( [Date], "YYYY/MM" ),<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"YearMonthShort",
+FORMAT ( [Date], "YYYY/mmm" ),<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"MonthNameShort",
+FORMAT ( [Date], "mmm" ),<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"MonthNameLong",
+FORMAT ( [Date], "mmmm" ),<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"DayOfWeekNumber",
+WEEKDAY ( [Date] ),<span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"DayOfWeek",
+FORMAT ( [Date], "dddd" ),<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"DayOfWeekShort",
+FORMAT ( [Date], "ddd" ),<span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"Quarter",
+"Q" &amp; FORMAT ( [Date], "Q" ),<span style="mso-fareast-font-family:&quot;Times New Roman&quot;;color:#767676"><o:p></o:p></span></p><p class="MsoNormal" style="color: rgb(118, 118, 118); font-family: Lato, Helvetica, Arial, sans-serif; font-size: 20px; letter-spacing: normal;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE">"YearQuarter",
+FORMAT ( [Date], "YYYY" ) &amp; "/Q" &amp; FORMAT ( [Date],
+"Q" ))</p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE"><b>Fig 1 - How to create Date Table</b></p><p class="MsoNormal" style="line-height:22.5pt;background:#FFFFFE"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/906/4/1.gif"></p><p class="MsoNormal" style="letter-spacing: 0.3px; line-height: 22.5pt; background: rgb(255, 255, 254);"><b>Fig 2 - How to create Date Table (Image)</b></p><p><img src="https://app.colaberry.com/uploads/ProjectStepsImages/906/4/1.jpg"></p>
+
+<div><span style="color: rgb(30, 144, 255); font-family: Helvetica, sans-serif; letter-spacing: normal;">Power BI for Beginners: How to create a Date Table in Power BI</span></div><div><a href="https://softcrylic.com/blogs/power-bi-for-beginners-how-to-create-a-date-table-in-power-bi/" target="_blank" style="background-color: rgb(255, 255, 255); color: rgb(2, 84, 235); text-decoration: none; font-family: Helvetica, sans-serif; font-weight: 400; letter-spacing: normal;">https://softcrylic.com/blogs/power-bi-for-beginners-how-to-create-a-date-table-in-power-bi/</a><br></div>
+
